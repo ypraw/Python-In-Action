@@ -5,6 +5,6 @@ result = []
 
 
 while True:
-    userInput = str(input("Type here ... "))
+    userInput = str(input("Type here ... \n"))
     result.append(userInput)
     print(result)
