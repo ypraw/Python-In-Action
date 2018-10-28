@@ -48,12 +48,11 @@ this scipt written when i stuck on my undergraduate thesis hahahaha , forget it 
     ```
 
 ### Result
-    ```
 
+    ```
     LIST CREATION BENCHMARKING TEST
     *> every method generate 1000 items
     *> 5000 loops for testing
-
 
     numpy_array : 0.06775 seconds
     list_compre : 1.53685 seconds
