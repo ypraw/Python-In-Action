@@ -1,6 +1,6 @@
 # SIMPLE TEST LIST CREATION
-https://t.me/addstickers/NexusCirclejerk
-i use some methods for this simple test
+this scipt written when i stuck on my undergraduate thesis hahahaha , forget it ,it's .. ah just simpel test script using built in package timeit and third library such as numpy, so just install numpy using pip XD.
+
 
 * built in 
   * list.insert()
