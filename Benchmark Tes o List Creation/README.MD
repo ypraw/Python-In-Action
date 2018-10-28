@@ -49,7 +49,7 @@ this scipt written when i stuck on my undergraduate thesis hahahaha , forget it 
 
 ### Result
 
-    ```
+    ```bash
     LIST CREATION BENCHMARKING TEST
     *> every method generate 1000 items
     *> 5000 loops for testing
