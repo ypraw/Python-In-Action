@@ -39,8 +39,6 @@ def listcompre(item):
     mylist=[x for x in range(item)]
     return item
     
-#print(backInsert(1000))
-#print(frontInsert(1000))
 time1=timeit.timeit("backInsert(item)",globals=globals(),number=number)
 time2=timeit.timeit("frontInsert(item)",globals=globals(),number=number)
 time3=timeit.timeit("listcompre(item)",globals=globals(),number=number)
