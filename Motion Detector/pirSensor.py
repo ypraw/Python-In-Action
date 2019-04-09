@@ -5,7 +5,6 @@ __date__ = "Jul 25, 2017  23:49 "
 import RPi.GPIO as GPIO
 import time
 import os
-
 '''
 in this case, i added function to send email,
 the purpose if there is movement then raspi will send the
@@ -36,11 +35,14 @@ try:
             print "movement Detected"
 
             # Camera Action Here
-            os.system("fswebcam -p yuyv -d /dev/video0 -r 640*480/home/pi/Pictures/%d.jpeg" % pic)
+            os.system(
+                "fswebcam -p yuyv -d /dev/video0 -r 640*480/home/pi/Pictures/%d.jpeg"
+                % pic)
 
             # Sending email here
             SendMail('name of image', 'your email address', 'sending to',
-                     'your password', 'subject of message', 'content of message')
+                     'your password', 'subject of message',
+                     'content of message')
 
             pic += 1
             GPIO.output(3, 1)

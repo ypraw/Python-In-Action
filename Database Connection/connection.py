@@ -17,7 +17,8 @@ class MysqlUserDB:
 
         try:
             print("Checking connection of MYSQL ...")
-            self.con = mysql.connect(DBrootHost, DBrootUser, DBrootPass, DBrootDatabase)
+            self.con = mysql.connect(DBrootHost, DBrootUser, DBrootPass,
+                                     DBrootDatabase)
             self.cursor = self.con.cursor()
             self.cursor.execute('Select version()')
             print("Connected to Mysql Database\n")
@@ -30,8 +31,9 @@ class MysqlUserDB:
     def CreateDB(self, DBrootDatabase):
         print("Creating database...")
         try:
-            self.cursor.execute('CREATE database if NOT exists ' + DBrootDatabase)
-            self.cursor.execute("SHOW DATABASES LIKE %s", (DBrootDatabase,))
+            self.cursor.execute('CREATE database if NOT exists ' +
+                                DBrootDatabase)
+            self.cursor.execute("SHOW DATABASES LIKE %s", (DBrootDatabase, ))
             dbs = self.cursor.fetchone()
             print("Database created: ", dbs[0])
         except Warning as warn:
@@ -41,7 +43,7 @@ class MysqlUserDB:
     def GrantsAccess(self, DBrootDatabase):
         print("Accessing Account ...")
         try:
-            self.cursor.execute("SHOW DATABASES LIKE %s", (DBrootDatabase,))
+            self.cursor.execute("SHOW DATABASES LIKE %s", (DBrootDatabase, ))
             result = self.cursor.fetchone()
             print("Access Granted for Database", result[0])
         except Warning as warn:
@@ -55,4 +57,6 @@ class MysqlUserDB:
         self.cursor.close()
         self.con.close()
         print("Finished")
+
+
 # Init End

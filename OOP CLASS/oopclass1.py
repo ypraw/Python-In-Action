@@ -1,4 +1,3 @@
-
 class Mobil:
     def __init__(self, merk, warna):
         self.merk = merk

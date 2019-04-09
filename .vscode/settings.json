@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "~/Programming/Python/virtualenv/knnClassy/bin/python3",
+    "python.formatting.provider": "yapf",
+    "python.terminal.activateEnvironment": true,
+    "editor.formatOnSave": true,
+    "python.formatting.yapfArgs": ["--style", "{based_on_style: pep8, indent_width: 4}"]
+
+}

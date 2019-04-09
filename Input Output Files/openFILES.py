@@ -3,7 +3,6 @@
 ## Regular Expression             ##
 ####################################
 
-
 import re
 
 
@@ -15,11 +14,13 @@ def openFILE(dirFile):
 def readFILES(dirFile):
     # replace with a directory of files that you want to open
     result = openFILE("f:\Python\Practice\coba.txt")
-    Replace = re.findall(r'\d+\.*\d*', result)  # find value only floating data types
+    Replace = re.findall(r'\d+\.*\d*',
+                         result)  # find value only floating data types
     # tes=0
     file = open(dirFile, 'w')
     for item in Replace:
-        item = int(round(float(item)))  # this example for parsing string to int
+        item = int(round(
+            float(item)))  # this example for parsing string to int
         # tes=int (tes+item)
         # print( tes )
 
@@ -30,4 +31,5 @@ def readFILES(dirFile):
 
 
 # CALL METHOD
-readFILES("f:\Python\Practice\Files.txt")  # replace with a directory of files that you want to save
+readFILES("f:\Python\Practice\Files.txt"
+          )  # replace with a directory of files that you want to save

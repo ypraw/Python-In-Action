@@ -1,7 +1,4 @@
-
-
 class Mobil:
-
     def __init__(this, merk, warna, kecepatan=0):
         this.merk = merk
         this.warna = warna
@@ -30,5 +27,5 @@ print()
 kamu = Mobil("biru", "honda", 10)
 kamu.render_view()
 speed = 30
-print("kecepatan saat ini", kamu.kecepatan, "ditambah sebesar",
-      speed, "sehingga kecepatan saat ini menjadi ", kamu.TambahKecepatan(speed))
+print("kecepatan saat ini", kamu.kecepatan, "ditambah sebesar", speed,
+      "sehingga kecepatan saat ini menjadi ", kamu.TambahKecepatan(speed))

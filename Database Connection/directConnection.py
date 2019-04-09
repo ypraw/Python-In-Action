@@ -17,15 +17,19 @@ def TampilDB():
 
 
 def InsertDB():
-    cursor.execute("INSERT INTO `product` VALUES (%s, %s, %s, %s)",
-                   ('', 'Chiki', '5000', '50',))
+    cursor.execute("INSERT INTO `product` VALUES (%s, %s, %s, %s)", (
+        '',
+        'Chiki',
+        '5000',
+        '50',
+    ))
     connection.commit()
 
 
 def UpdateDB():
-    cursor.execute("UPDATE product SET name= (%s), price= (%s), stock= (%s)"
-                   "Where id= ( %s)",
-                   ("Permen", "500", "10", "1"))
+    cursor.execute(
+        "UPDATE product SET name= (%s), price= (%s), stock= (%s)"
+        "Where id= ( %s)", ("Permen", "500", "10", "1"))
     connection.commit()
 
 

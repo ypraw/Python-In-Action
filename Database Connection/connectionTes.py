@@ -2,8 +2,10 @@ import connection as dbs
 import warnings
 warnings.filterwarnings('error')
 
-mysqli = dbs.MysqlUserDB(DBrootHost='127.0.0.1', DBrootUser='root',
-                         DBrootPass='', DBrootDatabase='pos')
+mysqli = dbs.MysqlUserDB(DBrootHost='127.0.0.1',
+                         DBrootUser='root',
+                         DBrootPass='',
+                         DBrootDatabase='pos')
 
 db = mysqli.getDB()
 
